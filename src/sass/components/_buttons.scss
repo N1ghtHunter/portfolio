@@ -88,7 +88,15 @@
     }
   }
 }
-
+.contact-call-btn{
+  color: #fff;
+  font-size: 2.8rem !important;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+  &:hover{
+    letter-spacing: 2px;
+    color: #fff;
+  }
+}
 /* Arrow Button */
 .up i {
   color: #272727;
