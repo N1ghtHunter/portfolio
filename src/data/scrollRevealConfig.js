@@ -16,16 +16,24 @@ export const targetElements = [
     },
   },
   {
+    element: ".service-title",
+    animation: {
+      delay: 300,
+      distance: "0px",
+      origin: "bottom",
+    },
+  },
+  {
     element: ".hero-title",
     animation: {
-      delay: 500,
+      delay: 300,
       origin: window.innerWidth > 768 ? "left" : "bottom",
     },
   },
   {
     element: ".hero-cta",
     animation: {
-      delay: 1000,
+      delay: 700,
       origin: window.innerWidth > 768 ? "left" : "bottom",
     },
   },
@@ -55,6 +63,20 @@ export const targetElements = [
     animation: {
       delay: 1000,
       origin: window.innerWidth > 768 ? "right" : "bottom",
+    },
+  },
+  {
+    element: ".service-img",
+    animation: {
+      delay: 500,
+      origin: window.innerWidth > 768 ? "right" : "bottom",
+    },
+  },
+  {
+    element: ".service-wrapper__text",
+    animation: {
+      delay: 700,
+      origin: window.innerWidth > 768 ? "left" : "bottom",
     },
   },
   {
