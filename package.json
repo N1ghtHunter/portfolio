@@ -1,35 +1,29 @@
 {
-  "name": "simplefolio",
-  "version": "1.0.1",
-  "private": "true",
-  "description": "A clean, beautiful and responsive portfolio template for Developers!",
-  "source": "src/index.html",
+  "name": "portfolio",
+  "version": "2.0.0",
+  "description": "",
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cobidev/simplefolio"
+    "url": "git+https://github.com/N1ghtHunter/portfolio.git"
   },
-  "keywords": [],
-  "author": "Jacobo Martinez",
+  "author": "Mazin Islam",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cobidev/simplefolio/issues"
+    "url": "https://github.com/N1ghtHunter/portfolio/issues"
   },
-  "homepage": "https://github.com/cobidev/simplefolio#readme",
+  "homepage": "https://github.com/N1ghtHunter/portfolio#readme",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.7.0",
-    "parcel": "^2.0.1",
-    "parcel-bundler": "^1.12.5",
-    "prettier": "^2.4.1"
+    "@parcel/transformer-sass": "^2.9.3"
   },
   "dependencies": {
-    "@popperjs/core": "^2.10.2",
-    "bootstrap": "^5.1.3",
-    "jquery": "^3.6.0",
-    "popper.js": "^1.16.1",
-    "vanilla-tilt": "^1.7.2"
+    "@parcel/core": "^2.9.3",
+    "bootstrap": "^5.3.0",
+    "jquery": "^3.7.0",
+    "parcel": "^2.9.3",
+    "vanilla-tilt": "^1.8.0"
   }
 }
