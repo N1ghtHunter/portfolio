@@ -8,7 +8,7 @@ const projectContainer = document.querySelector("#projects-container");
 (async () => {
   try {
     const getProjects = async () => {
-      const response = await fetch("http://localhost:3008/api/projects");
+      const response = await fetch("https://mazin-portfolio-backend.azurewebsites.net/api/projects");
       const data = await response.json();
       return data;
     }
