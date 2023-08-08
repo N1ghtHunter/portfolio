@@ -5,11 +5,15 @@ import { targetElements, defaultProps } from "./data/scrollRevealConfig";
 
 const projectContainer = document.querySelector("#projects-container");
 
+initScrollReveal(targetElements, defaultProps);
+initTiltEffect();
+
 (async () => {
   try {
     const getProjects = async () => {
       const response = await fetch("https://mazin-portfolio-backend.azurewebsites.net/api/projects");
       const data = await response.json();
+      console.log(data);
       return data;
     }
 
