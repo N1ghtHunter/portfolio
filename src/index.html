@@ -1,299 +1,192 @@
 <!DOCTYPE html>
 <html lang="en" class="sr">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
+    <!-- Todo: put here your site title -->
+    <title>Mazin Islam | Full-Stack Developer</title>
+    <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
+    <meta
+      name="keywords"
+      content="Mazin Islam, Mazin, backend,frontend,Full-Stack,javascript,css,node,nodejs"
+    />
+    <!-- Todo: improve your SEO by adding a small.parcel-cache description of you -->
+    <meta name="description" content="Mazin Islam | Full-Stack Developer" />
+    <meta name="author" content="Mazin Islam" />
+    <meta name="og:title" content="Mazin Islam | Full-Stack Developer" />
+    <meta name="og:description" content="Mazin Islam | Full-Stack Developer" />
+    <meta
+      name="og:image"
+      content="https://mazin-islam-portfolio.netlify.app/assets/profilepic2.jpg"
+    />
+    <meta name="og:url" content="https://mazin-islam-portfolio.netlify.app/" />
+    <meta name="og:site_name" content="Mazin Islam | Full-Stack Developer" />
+    <meta name="og:type" content="website" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Mazin Islam | Full-Stack Developer" />
+    <meta
+      name="twitter:description"
+      content="Mazin Islam | Full-Stack Developer"
+    />
+    <meta
+      name="twitter:image"
+      content="https://mazin-islam-portfolio.netlify.app/assets/profilepic2.jpg"
+    />
+    <meta name="twitter:site" content="@zamzam2960" />
+    <meta name="twitter:creator" content="@zamzam2960" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.scss" />
+    <script
+      defer
+      src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"
+    ></script>
+  </head>
 
-  <!-- Todo: put here your site title -->
-  <title>Mazin Islam | Full-Stack Developer</title>
-  <!-- Todo: add some coding keywords below - e.g: (javascript, yourusername, etc) -->
-  <meta name="keywords" content="Mazin Islam, Mazin, backend,frontend,Full-Stack,javascript,css,node,nodejs" />
-  <!-- Todo: improve your SEO by adding a small.parcel-cache description of you -->
-  <meta name="description" content="Mazin Islam | Full-Stack Developer" />
-  <meta name="author" content="Mazin Islam" />
-  <meta name="og:title" content="Mazin Islam | Full-Stack Developer" />
-  <meta name="og:description" content="Mazin Islam | Full-Stack Developer" />
-  <meta name="og:image" content="https://mazin-islam-portfolio.netlify.app/assets/profilepic2.jpg" />
-  <meta name="og:url" content="https://mazin-islam-portfolio.netlify.app/" />
-  <meta name="og:site_name" content="Mazin Islam | Full-Stack Developer" />
-  <meta name="og:type" content="website" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Mazin Islam | Full-Stack Developer" />
-  <meta name="twitter:description" content="Mazin Islam | Full-Stack Developer" />
-  <meta name="twitter:image" content="https://mazin-islam-portfolio.netlify.app/assets/profilepic2.jpg" />
-  <meta name="twitter:site" content="@zamzam2960" />
-  <meta name="twitter:creator" content="@zamzam2960" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="styles.scss" />
-  <script defer src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <body>
+    <div id="top"></div>
 
-</head>
+    <!-- **** Hero Section **** -->
+    <section id="hero" class="jumbotron">
+      <div class="container">
+        <h1 class="hero-title load-hidden">
+          Hi, my name is <span class="text-color-main">Mazin Islam</span>
+          <br />
+          I'm a <span class="text-color-main">Full-Stack Developer.</span>
+        </h1>
+        <p class="hero-cta load-hidden">
+          <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about"
+            >Know more</a
+          >
+        </p>
+      </div>
+    </section>
+    <!-- /END Hero Section -->
 
-<body>
-  <div id="top"></div>
-
-  <!-- **** Hero Section **** -->
-  <section id="hero" class="jumbotron">
-    <div class="container">
-      <h1 class="hero-title load-hidden">
-        Hi, my name is <span class="text-color-main">Mazin Islam</span>
-        <br />
-        I'm a <span class="text-color-main">Full-Stack Developer.</span>
-      </h1>
-      <p class="hero-cta load-hidden">
-        <a rel="noreferrer" class="cta-btn cta-btn--hero" href="#about">Know more</a>
-      </p>
-    </div>
-  </section>
-  <!-- /END Hero Section -->
-
-  <!-- **** About Section **** -->
-  <section id="about">
-    <div class="container">
-      <h2 class="section-title load-hidden">About me</h2>
-      <div class="row about-wrapper">
-        <div class="col-md-6 col-sm-12">
-          <div class="about-wrapper__image load-hidden">
-            <img alt="Profile Image" class="img-fluid rounded shadow-lg" height="auto" width="300px"
-              src="assets/profilepic2.jpg" alt="Profile Image" />
+    <!-- **** About Section **** -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title load-hidden">About me</h2>
+        <div class="row about-wrapper">
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image load-hidden">
+              <img
+                alt="Profile Image"
+                class="img-fluid rounded shadow-lg"
+                height="auto"
+                width="300px"
+                src="assets/profilepic.jpg"
+                alt="Profile Image"
+              />
+            </div>
           </div>
-        </div>
-        <div class="col-md-6 col-sm-12">
-          <div class="about-wrapper__info load-hidden">
-            <p class="about-wrapper__info-text">
-              My name is Mazin Islam. As a full-stack developer with some experience, I am proficient in
-              working with Node.js, React, and Next.js. I am comfortable working
-              with both the front-end and back-end of web development and can
-              handle tasks such as designing and implementing user interfaces,
-              creating and maintaining databases, and integrating third-party APIs.
-              While I am still developing my skills, I am eager to learn and grow in
-              my role and am excited to take on new challenges.
-
-            </p>
-            <p class="about-wrapper__info-text">
-              For more information you can check my resume.
-            </p>
-            <span class="d-flex mt-3">
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" id="resume"
-                href="https://mazin-portfolio-backend.azurewebsites.net/api/cv" download>
-                View Resume
-              </a>
-            </span>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info load-hidden">
+              <p class="about-wrapper__info-text">
+                My name is Mazin Islam. I'm Experienced as a full-stack
+                developer I'm adept in Node.js, Expressjs, React, and Next.js.
+                Proficient DBs, and API integration. While I am still developing
+                my skills, I am eager to learn and grow in my role and I am
+                excited to take on new challenges..
+              </p>
+              <p class="about-wrapper__info-text">
+                For more information you can check my resume.
+              </p>
+              <span class="d-flex mt-3">
+                <a
+                  rel="noreferrer"
+                  target="_blank"
+                  class="cta-btn cta-btn--resume"
+                  id="resume"
+                  href="https://drive.google.com/file/d/1ZQYPODclsW7yZ6izhKUOO_8M0KGfqENi/view?usp=sharing"
+                >
+                  View Resume
+                </a>
+              </span>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-  <!-- /END About Section -->
+    </section>
+    <!-- /END About Section -->
 
-  <!-- **** Projects Section **** -->
-  <section id="projects">
-    <div class="container">
-      <div class="project-wrapper" id="projects-container">
-        <h2 class="section-title dark-blue-text">Projects</h2>
-
-        <!-- Notice: each .row is a project -->
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <div class="project-wrapper__text load-hidden">
-              <h3 class="project-wrapper__text-title">Ayat Quran</h3>
-              <div>
-                <p class="mb-4">
-                  A random ayah generator including with the whole Holy Quran text, tafsir, sound. Using CSS, Bootstrap,
-                  Ejs, Nodejs, Express and Api fetch
-                </p>
-              </div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero" href="https://ayat-quran.onrender.com/">
-                See Live
-              </a>
-              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
-                href="https://github.com/N1ghtHunter/Ayat-Quran/tree/main">
-                Source Code
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-8 col-sm-12">
-            <div class="project-wrapper__image load-hidden">
-              <a rel="noreferrer" href="https://ayat-quran-mazin.herokuapp.com/" target="_blank">
-                <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
-                  class="thumbnail rounded js-tilt">
-                  <img alt="Project Image" class="img-fluid" src="assets/ayat-quran.jpeg" />
-                </div>
-              </a>
-            </div>
-          </div>
+    <!-- **** Projects Section **** -->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper" id="projects-container">
+          <h2 class="section-title dark-blue-text">Projects</h2>
         </div>
-        <!-- /END Project -->
-
-        <!-- Notice: each .row is a project -->
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <div class="project-wrapper__text load-hidden">
-              <h3 class="project-wrapper__text-title">Todo list</h3>
-              <div>
-                <p class="mb-4">
-                  A Todo using Nodejs, Express, Mongoose and Ejs
-                </p>
-              </div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
-                href="https://todo-list-mazin.herokuapp.com/">
-                See Live
-              </a>
-              <a rel="noreferrer" target="_blank" class="cta-btn text-color-main"
-                href="https://github.com/N1ghtHunter/todolist">
-                Source Code
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-8 col-sm-12">
-            <div class="project-wrapper__image load-hidden">
-              <a rel="noreferrer" href="https://todo-list-mazin.herokuapp.com/" target="_blank">
-                <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
-                  class="thumbnail rounded js-tilt">
-                  <img alt="Project Image" class="img-fluid" src="assets/Todo-list.jpeg" />
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- /END Project -->
-
-        <!-- Notice: each .row is a project -->
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <div class="project-wrapper__text load-hidden">
-              <h3 class="project-wrapper__text-title">Shofha Landing Page</h3>
-              <div>
-                <p class="mb-4">
-                  Landing page using CSS, Bootstrap, pure JS.
-                </p>
-              </div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
-                href="https://n1ghthunter.github.io/It-Shofha-project/pages/home.html">
-                See Live
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-8 col-sm-12">
-            <div class="project-wrapper__image load-hidden">
-              <a rel="noreferrer" href="https://n1ghthunter.github.io/It-Shofha-project/pages/home.html"
-                target="_blank">
-                <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
-                  class="thumbnail rounded js-tilt">
-                  <img alt="Project Image" class="img-fluid" src="assets/shofha.jpeg" />
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- /END Project -->
-        <!-- Notice: each .row is a project -->
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <div class="project-wrapper__text load-hidden">
-              <h3 class="project-wrapper__text-title">Game of Thrones Landing Page</h3>
-              <div>
-                <p class="mb-4">
-                  Made it for educational purposes using CSS, Bootstrap, pure JS.
-                </p>
-              </div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
-                href="https://n1ghthunter.github.io/It-Shofha-project/pages/got.html">
-                See Live
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-8 col-sm-12">
-            <div class="project-wrapper__image load-hidden">
-              <a rel="noreferrer" href="https://n1ghthunter.github.io/It-Shofha-project/pages/got.html" target="_blank">
-                <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
-                  class="thumbnail rounded js-tilt">
-                  <img alt="Project Image" class="img-fluid" src="assets/got page.jpeg" />
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- /END Project -->
-        <!-- Notice: each .row is a project -->
-        <div class="row">
-          <div class="col-lg-4 col-sm-12">
-            <div class="project-wrapper__text load-hidden">
-              <h3 class="project-wrapper__text-title">Sign up Page</h3>
-              <div>
-                <p class="mb-4">
-                  Sign up page with JS valdiation using pure javascript
-                </p>
-              </div>
-              <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--hero"
-                href="https://n1ghthunter.github.io/It-Shofha-project/index.html">
-                See Live
-              </a>
-            </div>
-          </div>
-          <div class="col-lg-8 col-sm-12">
-            <div class="project-wrapper__image load-hidden">
-              <a rel="noreferrer" href="https://n1ghthunter.github.io/It-Shofha-project/index.html" target="_blank">
-                <div data-tilt data-tilt-max="4" data-tilt-glare="true" data-tilt-max-glare="0.5"
-                  class="thumbnail rounded js-tilt">
-                  <img alt="Project Image" class="img-fluid" src="assets/login page.jpeg" />
-                </div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <!-- /END Project -->
       </div>
-    </div>
-  </section>
-  <!-- /END Projects Section -->
+    </section>
+    <!-- /END Projects Section -->
 
-  <!-- **** Contact Section **** -->
-  <section id="contact">
-    <div class="container">
-      <h2 class="section-title">Contact</h2>
-      <div class="contact-wrapper load-hidden">
-        <p class="contact-wrapper__text">Wanna work together?</p>
-        <a rel="noreferrer" target="_blank" class="cta-btn cta-btn--resume" href="mailto:mazinislam431@gmail.com">Email
-          Me</a>
-        <a class="contact-call-btn" href="tel:+201033944386"><i class="fa fa-mobile" aria-hidden="true"></i>
-          +201033944386</a>
+    <!-- **** Contact Section **** -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">Contact</h2>
+        <div class="contact-wrapper load-hidden">
+          <p class="contact-wrapper__text">Wanna work together?</p>
+          <a
+            rel="noreferrer"
+            target="_blank"
+            class="cta-btn cta-btn--resume"
+            href="mailto:mazinislam431@gmail.com"
+            >Email Me</a
+          >
+          <a class="contact-call-btn" href="tel:+201033944386"
+            ><i class="fa fa-mobile" aria-hidden="true"></i> +201033944386</a
+          >
+        </div>
       </div>
-    </div>
-  </section>
-  <!-- /END Contact Section -->
+    </section>
+    <!-- /END Contact Section -->
 
-  <!-- **** Footer Section **** -->
-  <footer class="footer navbar-static-bottom">
-    <div class="container">
-      <a rel="noreferrer" href="#top" class="back-to-top">
-        <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
-      </a>
-      <div class="social-links">
-        <!-- <a rel="noreferrer" href="#!" target="_blank">
+    <!-- **** Footer Section **** -->
+    <footer class="footer navbar-static-bottom">
+      <div class="container">
+        <a rel="noreferrer" href="#top" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <!-- <a rel="noreferrer" href="#!" target="_blank">
             <i class="fa fa-twitter fa-inverse"></i>
           </a> -->
-        <a rel="noreferrer" href="https://www.linkedin.com/in/mazin-islam-88658b22b/" target="_blank">
-          <i class="fa fa-linkedin fa-inverse"></i>
-        </a>
-        <a rel="noreferrer" href="https://github.com/N1ghtHunter" target="_blank">
-          <i class="fa fa-github fa-inverse"></i>
-        </a>
+          <a
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/mazin-islam-88658b22b/"
+            target="_blank"
+          >
+            <i class="fa fa-linkedin fa-inverse"></i>
+          </a>
+          <a
+            rel="noreferrer"
+            href="https://github.com/N1ghtHunter"
+            target="_blank"
+          >
+            <i class="fa fa-github fa-inverse"></i>
+          </a>
+        </div>
+
+        <hr />
+        <p class="footer__text">
+          © 2022 - Developed by
+          <a
+            rel="noreferrer"
+            href="https://github.com/N1ghtHunter"
+            target="_blank"
+            >Mazin Islam</a
+          >
+        </p>
       </div>
+    </footer>
+    <!-- /END Footer Section -->
 
-      <hr />
-      <p class="footer__text">
-        © 2022 - Developed by
-        <a rel="noreferrer" href="https://github.com/N1ghtHunter" target="_blank">Mazin Islam</a>
-      </p>
-    </div>
-  </footer>
-  <!-- /END Footer Section -->
-
-  <script defer type="module" src="index.js"></script>
-</body>
-
+    <script type="module" src="fetchData.js"></script>
+    <script defer type="module" src="index.js"></script>
+  </body>
 </html>
