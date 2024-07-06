@@ -1,8 +1,5 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore, collection, getDocs } from "firebase/firestore";
-import initScrollReveal from "./scripts/scrollReveal";
-import initTiltEffect from "./scripts/tiltAnimation";
-import { targetElements, defaultProps } from "./data/scrollRevealConfig";
 
 const firebaseConfig = {
   apiKey: "AIzaSyBLhBH1PS7xEpYQFWveezRR5IImDUiGxXE",
@@ -20,27 +17,27 @@ const db = getFirestore(app);
 const projectsRef = collection(db, "projects");
 const projectContainer = document.querySelector("#projects-container");
 
-getDocs(projectsRef)
-  .then((querySnapshot) => {
-    const projects = [];
-    querySnapshot.forEach((doc) => {
-      // Get the data from each document
-      const project = doc.data();
-      projects.push(project);
-    });
-    projects
-      .sort((a, b) => Number(a.index) - Number(b.index))
-      .forEach((project) => {
-        const projectElement = createProjectElement(project);
-        projectContainer.appendChild(projectElement);
+export async function fetchProjects(cb) {
+  return getDocs(projectsRef)
+    .then((querySnapshot) => {
+      const projects = [];
+      querySnapshot.forEach((doc) => {
+        // Get the data from each document
+        const project = doc.data();
+        projects.push(project);
       });
-
-    initScrollReveal(targetElements, defaultProps);
-    initTiltEffect();
-  })
-  .catch((error) => {
-    console.log("Error getting documents: ", error);
-  });
+      projects
+        .sort((a, b) => Number(a.index) - Number(b.index))
+        .forEach((project) => {
+          const projectElement = createProjectElement(project);
+          projectContainer.appendChild(projectElement);
+        });
+      cb();
+    })
+    .catch((error) => {
+      console.log("Error getting documents: ", error);
+    });
+}
 
 function createProjectElement(project) {
   const projectElement = document.createElement("div");
