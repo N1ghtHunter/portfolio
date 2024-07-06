@@ -44,6 +44,16 @@ export const targetElements = [
     },
   },
   {
+    element: ".contact-wrapper",
+    animation: {
+      delay: 800,
+      origin: "bottom",
+    },
+  },
+];
+
+export const projectElements = [
+  {
     element: ".project-wrapper__text",
     animation: {
       delay: 500,
@@ -55,13 +65,6 @@ export const targetElements = [
     animation: {
       delay: 1000,
       origin: window.innerWidth > 768 ? "right" : "bottom",
-    },
-  },
-  {
-    element: ".contact-wrapper",
-    animation: {
-      delay: 800,
-      origin: "bottom",
     },
   },
 ];
